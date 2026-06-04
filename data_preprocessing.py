@@ -126,8 +126,7 @@ def veriyi_yukle_ve_isle(csv_yolu: str) -> pd.DataFrame:
         ValueError: Zorunlu sütunlar eksikse
     """
     # --- 1. Dosya Kontrolü ---
-    if not os.path.exists(csv_yolu):
-        raise FileNotFoundError(f"[HATA] Veri dosyası bulunamadı: {csv_yolu}")
+    
 
     # --- 2. CSV Okuma ---
     try:
