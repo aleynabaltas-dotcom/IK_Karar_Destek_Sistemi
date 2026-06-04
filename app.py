@@ -81,7 +81,7 @@ st.markdown("""
 @st.cache_resource(show_spinner="🧠 Model yükleniyor, lütfen bekleyin...")
 def sistemi_yukle():
     """Veri ve KDS modelini yükler, önbelleğe alır."""
-    csv_yolu = os.path.join("data", "resumes.csv")
+    csv_yolu = "resumes.csv"
     df = veriyi_yukle_ve_isle(csv_yolu)
     kds = KararDestek(df)
     return df, kds
