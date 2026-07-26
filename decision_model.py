@@ -322,7 +322,7 @@ class KararDestek:
 if __name__ == "__main__":
     from data_preprocessing import veriyi_yukle_ve_isle
     
-    CSV_YOLU = os.path.join("data", "resumes.csv")
+    CSV_YOLU = "resumes.csv"
 
     print("=" * 55)
     print("   KARAR MODELİ — TEST ÇALIŞIYOR")
