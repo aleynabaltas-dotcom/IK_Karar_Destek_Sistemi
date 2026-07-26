@@ -126,7 +126,8 @@ def veriyi_yukle_ve_isle(csv_yolu: str) -> pd.DataFrame:
         ValueError: Zorunlu sütunlar eksikse
     """
     # --- 1. Dosya Kontrolü ---
-    
+    if not os.path.exists(csv_yolu):
+        raise FileNotFoundError(f"[HATA] Veri dosyası bulunamadı: {csv_yolu}")
 
     # --- 2. CSV Okuma ---
     try:
@@ -179,7 +180,7 @@ def veriyi_yukle_ve_isle(csv_yolu: str) -> pd.DataFrame:
 if __name__ == "__main__":
 
     # Proje kök dizininden çalıştırıldığı varsayılır
-    CSV_YOLU = os.path.join("data", "resumes.csv")
+    CSV_YOLU = "resumes.csv
 
     print("=" * 55)
     print("   VERİ ÖN İŞLEME MODÜLİ — TEST ÇALIŞIYOR")
