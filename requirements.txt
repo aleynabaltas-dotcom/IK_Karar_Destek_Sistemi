@@ -4,5 +4,4 @@ streamlit
 scikit-learn
 sentence-transformers
 plotly
-openpyxl
-python-dotenv
+
