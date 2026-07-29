@@ -180,7 +180,7 @@ def veriyi_yukle_ve_isle(csv_yolu: str) -> pd.DataFrame:
 if __name__ == "__main__":
 
     # Proje kök dizininden çalıştırıldığı varsayılır
-    CSV_YOLU = "resumes.csv
+  CSV_YOLU = "resumes.csv"
 
     print("=" * 55)
     print("   VERİ ÖN İŞLEME MODÜLİ — TEST ÇALIŞIYOR")
