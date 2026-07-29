@@ -178,19 +178,19 @@ def veriyi_yukle_ve_isle(csv_yolu: str) -> pd.DataFrame:
 # =============================================================================
 if __name__ == "__main__":
 
-    # Proje kök dizininden çalıştırıldığı varsayılır
-  CSV_YOLU = "resumes.csv"
-
-    print("=" * 55)
-    print("   VERİ ÖN İŞLEME MODÜLİ — TEST ÇALIŞIYOR")
-    print("=" * 55)
-
-    df_islenmis = veriyi_yukle_ve_isle(CSV_YOLU)
-
-    print("\n--- İlk 3 Adayın İşlenmiş Verisi ---")
-    print(df_islenmis[["Ad_Soyad", "Egitim_Seviyesi",
-                        "Egitim_Seviyesi_Numerik",
-                        "Embedding_Metni"]].head(3).to_string())
-
-    print("\n--- Numerik Kriterlerin İstatistikleri ---")
-    print(df_islenmis[NUMERIK_KRITERLER].describe().round(2))
+        # Proje kök dizininden çalıştırıldığı varsayılır
+        CSV_YOLU = "resumes.csv"
+    
+        print("=" * 55)
+        print("  VERİ ÖN İŞLEME MODÜLÜ - TEST ÇALIŞIYOR")
+        print("=" * 55)
+    
+        df_islenmis = veriyi_yukle_ve_isle(CSV_YOLU)
+    
+        print("\n--- İlk 3 Adayın İşlenmiş Verisi ---")
+        print(df_islenmis[["Ad_Soyad", "Egitim_Seviyesi",
+                           "Egitim_Seviyesi_Numerik",
+                           "Embedding_Metni"]].head(3).to_string())
+    
+        print("\n--- Numerik Kriterlerin İstatistikleri ---")
+        print(df_islenmis[NUMERIK_KRITERLER].describe().round(2))
