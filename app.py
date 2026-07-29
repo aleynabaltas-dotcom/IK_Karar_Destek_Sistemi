@@ -8,7 +8,6 @@ import plotly.graph_objects as go
 import plotly.express as px
 import sys
 import os
-
 from data_preprocessing import veriyi_yukle_ve_isle, NUMERIK_KRITERLER
 from decision_model import KararDestek, KRITER_AGIRLIKLARI
 
